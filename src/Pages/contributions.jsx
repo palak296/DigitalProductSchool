@@ -19,7 +19,7 @@ const Contributions = () => {
 
             try {
                 const response = await fetch(
-                    `https://api.github.com/users/${userContext.username}/events?per_page=100`
+                    `https://api.github.com/users/${userContext.username}/events`
                 );
 
                 if (!response.ok) {
